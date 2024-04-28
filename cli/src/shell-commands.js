@@ -19,12 +19,14 @@ const runCommand = async (command, logOutput = true) => {
 };
 
 export const isNginxServiceRunning = async () => {
-  const { stdout } = await runCommand('docker compose ps --format json', false);
-  const containers = JSON.parse(stdout);
-  return !!containers.find(
+  const stdout  = await runCommand('docker compose ps --format json', false);
+  // const containers = JSON.parse(stdout);
+  console.log(stdout)
+  return true
+  /*return !!containers.find(
     (container) =>
       container.Service === 'nginx' && container.State === 'running'
-  );
+  );*/
 };
 
 export const execNginxReload = async () => {
