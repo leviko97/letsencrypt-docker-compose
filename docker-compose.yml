@@ -3,7 +3,7 @@ version: "3"
 services:
   cli:
     build: ./cli
-    image: leviko97/letsencrypt-docker-compose-cli
+    image: leviko97/cli
     user: ${CURRENT_USER}
     group_add:
       - ${DOCKER_GROUP}
