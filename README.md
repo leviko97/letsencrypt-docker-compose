@@ -81,7 +81,7 @@ Make sure you have up to date versions of [Docker](https://docs.docker.com/insta
 Clone this repository (or create and clone a [fork](https://github.com/evgeniy-khist/letsencrypt-docker-compose/fork)):
 
 ```bash
-git clone https://github.com/evgeniy-khist/letsencrypt-docker-compose.git
+git clone https://github.com/leviko97/letsencrypt-docker-compose.git
 ```
 
 ### <a id="2-2"></a>Step 1 - Create DNS records
